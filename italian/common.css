@@ -45,6 +45,22 @@ a:hover {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 48px;
+  width: auto;
+}
+
+.logo-main,
+.logo-sub { display: none; }
+
+@media (max-width: 600px) {
+  .logo img { height: 40px; }
+}
+
+.logo {
   color: #8b1f2b;
 }
 
@@ -328,4 +344,5 @@ a:hover {
     font-size: 0.85rem;
   }
 }
+
 
