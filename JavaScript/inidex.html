@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <h1>入力した値を使って計算するページ</h1>
+  <p>数値なら2倍にして表示、文字列なら文字数を表示します。</p>
+
+  <input id="i">
+  <button onclick="d()">数値を2倍</button>
+  <button onclick="l()">文字数</button>
+  <p id="r"></p>
+
+  <script>
+    function d() {
+      var v = document.getElementById("i").value;
+      document.getElementById("r").textContent = v * 2;
+    }
+
+    function l() {
+      var t = document.getElementById("i").value;
+      document.getElementById("r").textContent = t.length;
+    }
+  </script>
+
+</body>
+</html>
