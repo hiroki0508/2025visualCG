@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第9回課題</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 16px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .box {
+      border: 1px solid #333;
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: 600px) {
+      .wrapper {
+        display: flex;
+        gap: 8px;
+      }
+      .box {
+        flex: 1;
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>レスポンシブwebページ</h1>
+
+  <div class="wrapper">
+    <div class="box">ボックスA</div>
+    <div class="box">ボックスB</div>
+  </div>
+</body>
+</html>
